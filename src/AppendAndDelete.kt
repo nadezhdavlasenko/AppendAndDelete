@@ -27,16 +27,7 @@ fun appendAndDelete(s: String, t: String, k: Int): String {
     ) return YES
     val minNumberOfOperations = abs(s.length - lastCommonIndex + t.length - lastCommonIndex - 2)
     if (minNumberOfOperations > k) return NO
-//    if (lastCommonIndex >= 0) {
-        if ((minNumberOfOperations == k)
-//            ||
-//            (shorterString.length == longerString.length &&
-//                    (shorterString.length * 2 <= k ||
-//                            k % 2 == 0)
-//                    )
-        )
-            return YES
-//    } else if (minNumberOfOperations <= k) return YES
+    if (minNumberOfOperations == k) return YES
     return NO
 }
 
